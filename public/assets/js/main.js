@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 function signOut() {
     Swal.fire({
-        title: 'Are you sure?',
-        text: "You want to sign out?",
+        title: 'Kamu yakin?',
+        text: "Keluar",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, I Want to Sign Out!'
+        confirmButtonText: 'Iya, saya ingin keluar'
     }).then(function (result) {
         if (result.value) {
             $.ajax({

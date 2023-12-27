@@ -51,7 +51,7 @@
                             <th class="border px-4 py-2">#</th>
                             <th class="border px-4 py-2">Nama Petugas</th>
                             <th class="border px-4 py-2">Target</th>
-                            <th class="border px-4 py-2">Absolut</th>
+                            <th class="border px-4 py-2">Realisasi</th>
                             <th class="border px-4 py-2">Realisasi (%)</th>
                         </tr>
                     </thead>
@@ -61,7 +61,7 @@
                                 <td class="border px-4 py-2"><?= $no++ ?></td>
                                 <td class="border px-4 py-2"><?= $row['nama_petugas'] ?></td>
                                 <td class="border px-4 py-2"><?= $row['target'] ?></td>
-                                <td class="border px-4 py-2"><?= $row['total_absolut'] ?></td>
+                                <td class="border px-4 py-2"><?= $row['realisasi'] ?></td>
                                 <td class="border px-4 py-2"><?= ($row['realisasi'] / $row['target']) * 100 ?>%</td>
                             </tr>
                         <?php endforeach ?>
